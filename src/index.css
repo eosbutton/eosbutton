@@ -1,0 +1,219 @@
+body {
+  margin: 0;
+  padding: 0;
+  /*font-family: sans-serif;*/
+  font-family: roboto, sans-serif;
+  height: 100vh;
+  background: linear-gradient(0deg, rgba(200,200,200,1) 0%, rgba(244,242,243,1) 50%, rgba(255,255,255,1) 100%);
+  background-attachment: fixed;
+}
+
+/* Main button - Start */
+
+.main_button_container_button {
+    background-color: #252525;
+    width: 400px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+    border-radius: 200px;
+    -webkit-box-shadow: inset 0px 2px 0px #585858, 1px 1px 0px #000, 2px 2px 5px #000;
+    -moz-box-shadow: inset 0px 2px 0px #585858, 1px 1px 0px #000, 2px 2px 5px #000;
+    box-shadow: inset 0px 2px 0px #585858, 1px 1px 0px #000, 2px 2px 5px #000;
+}
+.main_button_hole {
+    background-color: #151515;
+    width: 310px;
+    height: 310px;
+    margin-left: auto;
+    margin-right: auto;
+    top: 50px;
+    position: relative;
+    -webkit-border-radius: 155px;
+    -moz-border-radius: 155px;
+    border-radius: 155px;
+    -webkit-box-shadow: 1px 1px 0px #5d5d5d;
+    -moz-box-shadow: 1px 1px 0px #5d5d5d;
+    box-shadow: 1px 1px 0px #5d5d5d;
+}
+.main_button_button {
+    width: 300px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+    cursor: pointer;
+    top: -5px;
+    position: relative;
+    background-image: linear-gradient(bottom, rgb(82,79,82) 0%, rgb(134,134,134) 57%);
+    background-image: -o-linear-gradient(bottom, rgb(82,79,82) 0%, rgb(134,134,134) 57%);
+    background-image: -moz-linear-gradient(bottom, rgb(82,79,82) 0%, rgb(134,134,134) 57%);
+    background-image: -webkit-linear-gradient(bottom, rgb(82,79,82) 0%, rgb(134,134,134) 57%);
+    background-image: -ms-linear-gradient(bottom, rgb(82,79,82) 0%, rgb(134,134,134) 57%);
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    border-radius: 150px;
+    -webkit-box-shadow: inset 0px 2px 0px #a8a8a8, 0px 2px 0px #2a2a2a, 0px 3px 0px #2a2a2a, 0px 4px 0px #2a2a2a, 0px 5px 0px #2a2a2a, 0px 6px 0px #2a2a2a, 0px 7px 0px #2a2a2a, 0px 8px 0px #2a2a2a, 0px 9px 0px #2a2a2a, 0px 10px 0px #2a2a2a, 10px 20px 10px #000;
+    -moz-box-shadow: inset 0px 2px 0px #a8a8a8, 0px 2px 0px #2a2a2a, 0px 3px 0px #2a2a2a, 0px 4px 0px #2a2a2a, 0px 5px 0px #2a2a2a, 0px 6px 0px #2a2a2a, 0px 7px 0px #2a2a2a, 0px 8px 0px #2a2a2a, 0px 9px 0px #2a2a2a, 0px 10px 0px #2a2a2a, 10px 20px 10px #000;
+    box-shadow: inset 0px 2px 0px #a8a8a8, 0px 2px 0px #2a2a2a, 0px 3px 0px #2a2a2a, 0px 4px 0px #2a2a2a, 0px 5px 0px #2a2a2a, 0px 6px 0px #2a2a2a, 0px 7px 0px #2a2a2a, 0px 8px 0px #2a2a2a, 0px 9px 0px #2a2a2a, 0px 10px 0px #2a2a2a, 10px 20px 10px #000;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    transition: all .2s;
+}
+.main_button_button:active {
+    top: 5px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: inset 0px 2px 0px #a8a8a8;
+}
+@keyframes mainButtonEosIcon {
+    50% {filter: brightness(85%)}
+}
+.main_button_eos_icon {
+    fill: #03A9F4;
+    width: 140px;
+    height: 140px;
+    margin-left: 50%;
+    margin-top: 50%;
+    left: -70px;
+    top: -70px;
+    position: absolute;
+    z-index: 2;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+    animation:mainButtonEosIcon 5s infinite;
+}
+.main_button_button:hover .main_button_eos_icon { fill: #00B0FF; filter: drop-shadow(0px 0px 3px #00B0FF); animation: none }
+.main_button_button:active .main_button_eos_icon { fill: #00E5FF; animation: none }
+.main_button_lighter_eos_icon {
+    fill: #4FC3F7;
+    width: 140px;
+    height: 140px;
+    margin-left: 50%;
+    margin-top: 50%;
+    left: -68px;
+    top: -68px;
+    position: absolute;
+    z-index: 1;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+    animation:mainButtonEosIcon 5s infinite;
+}
+.main_button_button:hover .main_button_lighter_eos_icon { fill: #40C4FF; animation: none }
+.main_button_button:active .main_button_lighter_eos_icon { fill: #18FFFF; animation: none }
+.main_button_darker_eos_icon {
+    fill: #01579B;
+    width: 140px;
+    height: 140px;
+    margin-left: 50%;
+    margin-top: 50%;
+    left: -72px;
+    top: -72px;
+    position: absolute;
+    z-index: 1;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+    animation:mainButtonEosIcon 5s infinite;
+}
+.main_button_button:hover .main_button_darker_eos_icon { fill: #0277BD; animation: none }
+.main_button_button:active .main_button_darker_eos_icon { fill: #00B8D4; animation: none }
+
+/* Main button - End */
+
+/* Animated color text - Start */
+
+.animated-color-text {
+  color: #000;
+  background: rgba(255, 253, 160, 1);
+  /*
+  background: -webkit-linear-gradient( left, #00ffff 0%, #97fba0 25%, #97b1fb 50%, #00ffff 100%) repeat;
+  background: -webkit-radial-gradient(circle, #23966c, #faaa54, #e23b4a, #db0768, #360670) repeat;
+  */
+  background: -webkit-linear-gradient(330deg, #e05252 0%, #99e052 25%, #52e0e0 50%, #9952e0 75%, #e05252 100%) repeat;
+  -webkit-background-clip: text;
+  -ms-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -ms-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  text-fill-color: transparent;
+  -webkit-animation-name: masked-animation;
+  -webkit-animation-duration: 50s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes masked-animation {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 8000px 3000px;
+  }
+}
+
+/* Animated color text - End */
+
+/* Override butter toast styles - Start */
+
+.butter-toast-tray[class*="top-"] {
+  top: 90px !important;
+}
+
+/* Override butter toast styles - End */
+
+/* Gradient background - Start */
+.gradient-background {
+	color: #fff;
+	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 45s ease infinite;
+	-moz-animation: Gradient 45s ease infinite;
+	animation: Gradient 45s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+/* Gradient background - End */
